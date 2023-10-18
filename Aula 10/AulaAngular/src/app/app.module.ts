@@ -11,9 +11,11 @@ import { CalcularMediaComponent } from './calcular-media/calcular-media.componen
 import { TelaPaiComponent } from './tela-pai/tela-pai.component';
 import { TelaFilho1Component } from './tela-pai/tela-filho1/tela-filho1.component';
 import { TelaFilho2Component } from './tela-pai/tela-filho2/tela-filho2.component';
+import { PaginaNaoEncontradaComponent } from './pagina-nao-encontrada/pagina-nao-encontrada.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
-  declarations: [AppComponent, MenuSuperiorComponent, CalculadoraComponent, CalcularMediaComponent, TelaPaiComponent, TelaFilho1Component, TelaFilho2Component],
+  declarations: [AppComponent, MenuSuperiorComponent, CalculadoraComponent, CalcularMediaComponent, TelaPaiComponent, TelaFilho1Component, TelaFilho2Component, PaginaNaoEncontradaComponent, HomeComponent],
   imports: [BrowserModule, AppRoutingModule, NgbModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
