@@ -1,0 +1,28 @@
+<h1>Exemplo ngFor</h1>
+
+<input type="checkbox" [(ngModel)]="mostraTabela" id="mostrar" />
+<label for="mostrar">Mostrar tabela?</label>
+
+<table *ngIf="mostraTabela">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Nome</th>
+      <th>Cidade</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of listaPessoas">
+      <td>{{ item.id }}</td>
+      <td>{{ item.nome }}</td>
+      <td
+        [ngClass]="{
+          sorocaba: item.cidade == 'Sorocaba',
+          votorantim: item.cidade == 'Votorantim'
+        }"
+      >
+        {{ item.cidade }}
+      </td>
+    </tr>
+  </tbody>
+</table>
