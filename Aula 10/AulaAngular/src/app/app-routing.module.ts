@@ -7,10 +7,12 @@ import { TelaFilho1Component } from './tela-pai/tela-filho1/tela-filho1.componen
 import { TelaFilho2Component } from './tela-pai/tela-filho2/tela-filho2.component';
 import { PaginaNaoEncontradaComponent } from './pagina-nao-encontrada/pagina-nao-encontrada.component';
 import { HomeComponent } from './home/home.component';
+import { UsuarioComponent } from './usuario/usuario.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
+  { path: 'usuario', component: UsuarioComponent },
   { path: 'calculadora', component: CalculadoraComponent },
   { path: 'calcular-media', component: CalcularMediaComponent },
   {

@@ -13,10 +13,29 @@ import { TelaFilho1Component } from './tela-pai/tela-filho1/tela-filho1.componen
 import { TelaFilho2Component } from './tela-pai/tela-filho2/tela-filho2.component';
 import { PaginaNaoEncontradaComponent } from './pagina-nao-encontrada/pagina-nao-encontrada.component';
 import { HomeComponent } from './home/home.component';
+import { UsuarioComponent } from './usuario/usuario.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
-  declarations: [AppComponent, MenuSuperiorComponent, CalculadoraComponent, CalcularMediaComponent, TelaPaiComponent, TelaFilho1Component, TelaFilho2Component, PaginaNaoEncontradaComponent, HomeComponent],
-  imports: [BrowserModule, AppRoutingModule, NgbModule, FormsModule],
+  declarations: [
+    AppComponent,
+    MenuSuperiorComponent,
+    CalculadoraComponent,
+    CalcularMediaComponent,
+    TelaPaiComponent,
+    TelaFilho1Component,
+    TelaFilho2Component,
+    PaginaNaoEncontradaComponent,
+    HomeComponent,
+    UsuarioComponent,
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    NgbModule,
+    FormsModule,
+    HttpClientModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
