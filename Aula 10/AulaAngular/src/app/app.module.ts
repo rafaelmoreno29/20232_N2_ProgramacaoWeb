@@ -15,6 +15,7 @@ import { PaginaNaoEncontradaComponent } from './pagina-nao-encontrada/pagina-nao
 import { HomeComponent } from './home/home.component';
 import { UsuarioComponent } from './usuario/usuario.component';
 import { HttpClientModule } from '@angular/common/http';
+import { UsuarioDetalheComponent } from './usuario/usuario-detalhe/usuario-detalhe.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { HttpClientModule } from '@angular/common/http';
     PaginaNaoEncontradaComponent,
     HomeComponent,
     UsuarioComponent,
+    UsuarioDetalheComponent,
   ],
   imports: [
     BrowserModule,
